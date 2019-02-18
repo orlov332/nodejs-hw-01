@@ -1,11 +1,10 @@
+import config from "./config/config";
+// import Product from "./models/Product";
+// import User from "./models/User";
+import * as Model from "./models/";
 
-import name from "./config/config";
+console.log(config.name);
 
-import Product from "./models/Product";
-import User from "./models/User";
+let user = new Model.User();
 
-console.log(name);
-
-let user = new User();
-
-let product = Product();
+let product = new Model.Product();
